@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&family=Roboto:wght@400;700&family=Work+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color:white;
+      }
+      .attribution a {
+        color: hsl(228, 100%, 95%);
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Sign-up form start -->
+     <div class="container">
+      <div class="card">      
+      <h1>Stay updated!</h1>
+      <div>
+        Join 60,000+ product managers receiving monthly updates on:
+      </div>
+      <div class="whatWeDo">
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+       <p>Product discovery and building what matters</p> </div>
+      <div>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <p>Measuring to ensure updates are a success</p>  </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+        
+      <p>And much more!</p>
+      </div>
+      </div>
+      <form  class="emailSection" >
+        <label for="email" >Email address  <span id="error-message"></span></label>
+        <span id="error-message"></span>
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="     email@company.com"
+        />
+        <button id="submitBtn">Subscribe to monthly newsletter</button>
+      </form>
+      
+    </div>
+    <div class="img"></div></div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="successCard"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+      <h1>
+        
+        Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span>ash@loremcompany.com</span> . Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <div><button id="dismissBtn">Dismiss message</button></div>
+      
+    </div>
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/good-mistake">Goodmistake</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+    
+
+</html>

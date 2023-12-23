@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(235, 18%, 26%);
+  margin: 10% auto;
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+  word-wrap: break-word;
+  justify-content: center;
+}
+.card {
+  padding: 2rem;
+  width: 50%;
+  overflow: hidden;
+}
+
+.img {
+  width: 50%;
+}
+.img svg {
+  max-width: 100%;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+.card > div {
+  margin-bottom: 1rem;
+}
+.whatWeDo div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.whatWeDo svg {
+  width: 10% !important;
+}
+.whatWeDo p {
+  width: 90%;
+}
+.container svg {
+  margin-right: 10px;
+  width: -webkit-fill-available;
+}
+.emailSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.emailSection label {
+  margin: 10px 0;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.emailSection input {
+  width: -webkit-fill-available;
+  height: 3rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0px 5px;
+}
+.emailSection input::placeholder {
+  font-size: 1.25rem;
+}
+.card button,
+.successCard button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.validationColor::placeholder {
+  color: red;
+}
+
+.successCard {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(235, 18%, 26%);
+  margin: 10% auto;
+  display: block;
+  width: 30%;
+  padding: 4rem;
+  border-radius: 7%;
+  word-wrap: break-word;
+}
+.successCard svg {
+  width: 64px;
+  height: 64px;
+}
+.successCard p span {
+  font-weight: bold;
+}
+.successCard p,
+.successCard h1,
+.successCard svg {
+  margin-bottom: 1rem;
+}
+.successCard p {
+  line-height: 1.5rem;
+}
+.successCard button:hover,
+.container button:hover {
+  background: linear-gradient(
+    to right,
+    hsl(345, 97%, 63%) 20%,
+    hsl(4, 100%, 65%) 80%
+  );
+}
+@media (max-width: 768px) {
+  .container,
+  .successCard {
+    width: auto;
+    margin: 0;
+
+    border-radius: 0;
+  }
+  .container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .successCard {
+    padding: 5rem 0 1rem;
+  }
+  .card {
+    width: 85%;
+    padding: 0;
+    margin: 3rem 0;
+  }
+  .img {
+    width: 100%;
+  }
+  .img svg {
+    width: 100%;
+    margin: 0;
+    border-radius: none;
+  }
+  .emailSection input {
+    padding: 5px;
+  }
+  .card button {
+    padding: 25px;
+  }
+  .whatWeDo > div {
+    margin: 3rem 0;
+  }
+  .successCard p,
+  .successCard h1,
+  .successCard svg {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .successCard p {
+    margin-bottom: 4rem;
+  }
+  .successCard div {
+    width: 90%;
+    margin: 4rem auto 0;
+  }
+  .successCard button {
+    margin: 4rem 0;
+  }
+}
